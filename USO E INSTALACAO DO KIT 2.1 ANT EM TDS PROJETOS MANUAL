@@ -1,0 +1,46 @@
+# Plano de Configuração Local: KIT 2.1 (ag-kit)
+
+Este plano detalha a configuração profissional e isolada do **KIT 2.1** (@vudovn/ag-kit) em um novo projeto, seguindo a recomendação de instalação local para evitar conflitos de versão e garantir escalabilidade.
+
+## User Review Required
+
+> [!IMPORTANT]
+> A instalação será feita de forma **local**. Isso significa que os comandos do Kit serão executados via `npx` ou através de scripts no `package.json`, garantindo que o projeto seja auto-contido.
+
+> [!NOTE]
+> O pacote oficial identificado é o `@vudovn/ag-kit`. Utilizaremos a versão mais recente disponível (2.0.2) que corresponde à linhagem 2.x solicitada.
+
+## Proposed Changes
+
+### 1. Inicialização do Ambiente
+Criaremos uma estrutura de pastas organizada para o novo projeto.
+
+#### [NEW] Estrutura de Pastas
+- `projeto-kit-21/`
+  - `src/` (Código fonte)
+  - `docs/` (Documentação da arquitetura)
+  - `package.json` (Dependências locais)
+  - `.antigravity/` (Configurações de sincronia)
+
+### 2. Comandos de Instalação
+Executaremos a sequência de comandos para garantir o isolamento:
+1. `mkdir meu-novo-projeto`
+2. `cd meu-novo-projeto`
+3. `npm init -y`
+4. `npm install @vudovn/ag-kit`
+5. `npx ag-kit init` (ou o comando equivalente de inicialização do kit)
+
+### 3. Integração Antigravity + KIT 2.1
+Criação de um arquivo de configuração `ag-kit.config.json` e um boilerplate inicial otimizado.
+
+### 4. Boas Práticas e Exemplo
+Documentação das 3 regras de ouro e código de exemplo funcional.
+
+## Verification Plan
+
+### Automated Tests
+- Verificação da existência da pasta `node_modules/@vudovn/ag-kit`.
+- Execução de um comando de teste do kit para validar a instalação.
+
+### Manual Verification
+- O usuário poderá rodar o código de exemplo gerado para confirmar que a integração com o Gemini Pro e Antigravity está funcionando.
