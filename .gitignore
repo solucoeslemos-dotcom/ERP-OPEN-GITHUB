@@ -1,0 +1,7 @@
+# Frappe Docker - ignorar dados persistentes
+frappe_docker/volumes/
+frappe_docker/.env
+
+# OS
+.DS_Store
+Thumbs.db
